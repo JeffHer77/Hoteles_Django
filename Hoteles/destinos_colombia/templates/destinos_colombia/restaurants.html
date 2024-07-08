@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/custom.css" >
+    <link rel="stylesheet" href="css/main.css" >
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js">
+
+    <title>Destinos Colombia</title>
+  </head>
+  <body>
+    <h1 class="fondo" >Destinos Colombia</h1>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><i class="bi bi-airplane-fill"></i> Destinos Colombia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html"> 
+              Inicio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./products.html">
+              Productos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./restaurants.html">
+              Restaurantes
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./events.html">
+              Eventos
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item" aria-current="page"><a href="./index.html">Inicio</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Restaurantes</li>
+        </ol>
+      </nav>
+    </div>
+    <div class="container">
+      
+        <div class="d-flex flex-wrap flex-row">
+          <div class="d-flex flex-column listaHot justify-content-between">
+            <div class="card" style="width: 18rem;"> 
+              <div class="card-body">
+                <img class="card-img-top" alt="Hotel img" height="170px" width="200px" src="https://th.bing.com/th/id/R.940b1c4e18cd7ea1b939fbeda592e634?rik=FerS2VmzYhZSyg&pid=ImgRaw&r=0" width="300" height="200"/>
+                <h6 class="card-title">Cartagena</h6>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Nunc iaculis mollis lectus, et consequat nunc sollicitudin id. Proin tempus pretium erat, quis condimentum nisl pulvinar gravida. Nullam et malesuada tellus.
+                  Suspendisse pretium, erat eget fringilla eleifend, odio lacus sodales sapien, eget maximus justo lacus ac massa.
+                </p>
+                <button id="carta" type="button" aria-pressed="true" class="btn btn-danger"><i class="bi bi-sunglasses"></i> Visitar hotel</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="d-flex flex-column listaHot justify-content-between">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <img class="card-img-top" alt="Hotel img" height="170px" width="200px" src="https://i.pinimg.com/originals/1a/fe/2f/1afe2fd6f7dce7372bbeae64a1ada588.jpg"/>
+                <h6 class="card-title">Armenia</h6>
+                <p class="card-text">
+                  Fusce orci sem, venenatis et est vitae, euismod sollicitudin velit. 
+                  Proin eget lacus malesuada, congue leo tristique, commodo nibh. Sed nibh risus, hendrerit nec ultricies ac, bibendum et elit. 
+                  Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                  Quisque scelerisque quis ipsum eu consequat. Nam id purus mi. In a velit tellus. Proin id pulvinar metus
+                </p>
+                <a href="#" class="btn btn-danger"><i class="bi bi-sunglasses"></i> Visitar hotel</a>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column listaHot justify-content-between">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <img class="card-img-top" alt="Hotel img" height="170px" width="200px" src="https://th.bing.com/th/id/R.707137e31333f8b8738b9c8122ea3d40?rik=gzityUmhqiQaYg&pid=ImgRaw&r=0"/>
+                <h6 class="card-title">Caldas</h6>
+                <p class="card-text">
+                  Fusce orci sem, venenatis et est vitae, euismod sollicitudin velit. 
+                  Proin eget lacus malesuada, congue leo tristique, commodo nibh. Sed nibh risus, hendrerit nec ultricies ac, bibendum et elit. 
+                  Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                  Quisque scelerisque quis ipsum eu consequat. Nam id purus mi. In a velit tellus. Proin id pulvinar metus.
+                </p> 
+                <a href="#" class="btn btn-danger"><i class="bi bi-sunglasses"></i> Visitar hotel</a>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column listaHot justify-content-between">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <img class="card-img-top" alt="Hotel img" height="170px" width="200px" src="https://th.bing.com/th/id/OIP.9OdJsQxaecx9zopYT8f_wQHaE8?rs=1&pid=ImgDetMain"/>
+                <h6 class="card-title">Ibague</h6>
+                <p class="card-text">
+                  Fusce orci sem, venenatis et est vitae, euismod sollicitudin velit. 
+                  Proin eget lacus malesuada, congue leo tristique, commodo nibh. Sed nibh risus, hendrerit nec ultricies ac, bibendum et elit. 
+                  Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                  Quisque scelerisque quis ipsum eu consequat. Nam id purus mi. In a velit tellus. Proin id pulvinar metus.
+                </p>
+                <a href="#" class="btn btn-danger"><i class="bi bi-sunglasses"></i> Visitar hotel</a>
+              </div>
+            </div>
+          </div>           
+        </div>
+
+          <div class="d-flex flex-wrap flex-row">
+            <div class="d-flex flex-column listaHot justify-content-between">
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <img class="card-img-top" alt="Hotel img" height="170px" width="200px" src="https://foodandpleasure.com/wp-content/uploads/2018/06/piantao-3.jpg"/>
+                  <h6 class="card-title">Girardot</h6>
+                  <p class="card-text">
+                    Fusce orci sem, venenatis et est vitae, euismod sollicitudin velit. 
+                    Proin eget lacus malesuada, congue leo tristique, commodo nibh. Sed nibh risus, hendrerit nec ultricies ac, bibendum et elit. 
+                    Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                    Quisque scelerisque quis ipsum eu consequat. Nam id purus mi. In a velit tellus. Proin id pulvinar metus.
+                  </p>
+                  <a href="#" class="btn btn-danger"><i class="bi bi-sunglasses"></i> Visitar hotel</a>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column listaHot justify-content-between">
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <img class="card-img-top" alt="Hotel img" height="170px" width="200px" src="https://i.blogs.es/177703/botania/1366_2000.jpg"/>
+                  <h6 class="card-title">Santa Marta</h6>
+                  <p class="card-text">
+                    Fusce orci sem, venenatis et est vitae, euismod sollicitudin velit.
+                    Proin eget lacus malesuada, congue leo tristique, commodo nibh. Sed nibh risus, hendrerit nec ultricies ac, bibendum et elit. 
+                    Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                    Quisque scelerisque quis ipsum eu consequat. Nam id purus mi. In a velit tellus. Proin id pulvinar metus.
+                  </p>
+                  <a href="#" class="btn btn-danger"><i class="bi bi-sunglasses"></i> Visitar hotel</a>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column listaHot justify-content-between">
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <img class="card-img-top" alt="Hotel img" height="170px" width="200px" src="https://th.bing.com/th/id/R.ee5c036801533b813cd3a282ec8a7b44?rik=rRVkcRMaw08iMQ&pid=ImgRaw&r=0"/>
+                  <h6 class="card-title">Guajira</h6>
+                  <p class="card-text">
+                    Fusce orci sem, venenatis et est vitae, euismod sollicitudin velit. 
+                    Proin eget lacus malesuada, congue leo tristique, commodo nibh. Sed nibh risus, hendrerit nec ultricies ac, bibendum et elit. 
+                    Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                    Quisque scelerisque quis ipsum eu consequat. Nam id purus mi. In a velit tellus. Proin id pulvinar metus
+                  </p>
+                  <a href="#" class="btn btn-danger"><i class="bi bi-sunglasses"></i> Visitar hotel</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          
+        
+ 
+      <!-- Optional JavaScript; choose one of the two! -->
+
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="node_modules/jquery/dist/jquery.min.js"></script>
+      <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> 
+      <!-- <script src="node_modules/popper.js/dist/popper.min.js" ></script> -->
+      <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" ></script> -->
+      
+        <!-- Option 2: Separate Popper and Bootstrap JS 
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script> 
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> 
+       -->
+      
+    </div>
+    <footer>
+     
+        <div class="row">
+          <div class="col-sm-4 d-flex flex-column alinearDer">
+            <a href="https://www.facebook.com/" padding-right class="links"><i class="bi bi-facebook"></i> Facebook</a>
+            <a href="https://www.tiktok.com/" class="links" onclick="fun()"  ><i class="bi bi-tiktok"></i> Tik tok</a>
+            <a href="https://www.Instagram.com/" class="links"><i class="bi bi-instagram"></i> Instagram</a>
+          </div>
+          <div class="col-sm-4 d-flex flex-column centrar">
+            <address>
+              <h4>Oficina Principal</h4>
+              <p><i class="bi bi-building"></i> Calle 85 # 30-15, Bogota, Colombia</p>
+              <p><i class="bi bi-telephone"></i> 3070758</p>
+              <p><i class="bi bi-envelope-at"></i> destinosColombia@resorts.com</p>
+            </address>
+          </div>
+          <div class="col-sm-4 d-flex flex-column alinearIz">
+            <a href="https://www.facebook.com/" class="links">Nosotros</a>
+            <a href="https://www.facebook.com/" class="links">Políticas</a>
+            <a href="./custServ.html" class="links">Quejas y reclamos</a>
+            <a href="https://www.facebook.com/" class="links">Trabaja con Nosotros</a>
+            <a href="./precios.html" class="links">Precios</a>
+          </div>
+        </div>
+   
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,300 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet"  type="text/css" href="{% static 'css/custom.css'%}" >
+    <link rel="stylesheet"  type="text/css" href="{% static 'css/main.css'%}" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    
+    <title>Destinos Colombia</title>
+  </head>
+  <body>
+    
+    <h1 class="fondo" >Destinos Colombia </h1>  
+    <div class="dib">
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" >
+
+            <img src="{%static 'playa-atardecer.jpg'%}" class="d-block w-100 ima" alt="playa-atarde">
+          </div> 
+          <div class="carousel-item" >
+
+            <img src="{%static 'rio-atardecer.jpg'%}" class="d-block w-100 ima" alt="rio">
+          </div>
+          <div class="carousel-item" >
+
+            <img src="{%static 'Restau.jfif'%}" class="d-block w-100 ima" alt="resta">
+          </div>
+          <div class="carousel-item" >
+
+            <img src="{%static 'playa.jfif'%}" class="d-block w-100 ima" alt="playa">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><i class="bi bi-airplane-fill"></i> Destinos Colombia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="./index.html"> 
+              Inicio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./products.html">
+              Productos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./restaurants.html">
+              Restaurantes
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./events.html">
+              Eventos
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+    <div class="container">
+      <nav aria-label="breadcrumb" class="centrar">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+        </ol>
+      </nav>
+    </div>
+
+    
+
+    
+
+    
+
+    <div class="container">
+
+      <p class="d-inline-flex gap-1">
+        <a class="btn color" data-bs-toggle="collapse" href="#elegir" role="button" aria-expanded="false" aria-controls="elegir">¿Por qué elegirnos?</a>
+        <button class="btn color" type="button" data-bs-toggle="collapse" data-bs-target="#ofrecen" aria-expanded="false" aria-controls="ofrecen">¿Qué servicios ofrecemos?</button>
+        <button class="btn color" type="button" data-bs-toggle="collapse" data-bs-target="#pago" aria-expanded="false" aria-controls="pago">¿Cómo puedes pagar</button>
+      </p>
+      <div class="row">
+        <div class="col-sm">
+          <div class="collapse" id="elegir">
+            <div class="card card-body">
+              <h4>
+                ¿Por qué elegirnos?
+              </h4>
+    
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia odio in est efficitur, nec semper nulla gravida. 
+                Vivamus ullamcorper vitae tellus at tincidunt. Fusce euismod, nisl quis lobortis eleifend, odio dui luctus turpis, non accumsan purus felis quis nulla. 
+                Quisque ut semper eros, vitae pellentesque lacus. Pellentesque aliquam, erat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="collapse" id="ofrecen">
+            <div class="card card-body">
+              <h4>
+                ¿Qué servicios ofrecemos?
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia odio in est efficitur, nec semper nulla gravida. 
+                Vivamus ullamcorper vitae tellus at tincidunt. Fusce euismod, nisl quis lobortis eleifend, odio dui luctus turpis, non accumsan purus felis quis nulla. 
+                Quisque ut semper eros, vitae pellentesque lacus. Pellentesque aliquam, erat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="collapse" id="pago">
+            <div class="card card-body">
+              <h4>
+                ¿Cómo puedes pagar?
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia odio in est efficitur, nec semper nulla gravida. 
+                Vivamus ullamcorper vitae tellus at tincidunt. Fusce euismod, nisl quis lobortis eleifend, odio dui luctus turpis, non accumsan purus felis quis nulla. 
+                Quisque ut semper eros, vitae pellentesque lacus. Pellentesque aliquam, erat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    <div class="d-flex flex-wrap flex-row">
+      <div class="d-flex flex-column listaHot justify-content-between">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <span  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ubicado cerca a la plaza de los cocheros">
+              <img height="170px" width="200px" class="card-img-top" alt="Hotel img" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/281442654.jpg?k=6f7e7888c2b1f3139d6f3e0a691922d5ae4f0b50bac2ca17a0e7098c3a46302d&o=&hp=1"/>
+              </span>
+              <h6 class="card-title">Cartagena urban royal</h6>
+              <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Nulla convallis blandit felis, sit amet bibendum massa imperdiet quis. 
+                  In at auctor metus. Cras turpis ante, ultrices et quam ac, posuere.
+              </p>
+              <a id="btn-hotel-carta" class="btn btn-danger"><i class="bi bi-sunglasses"></i> Visitar hotel</a>
+            </div>
+          </div>
+          <!-- <div>
+            <button class="btn btn-danger"><i class="bi bi-sunglasses"></i> Visitar hotel</button>
+          </div> -->
+      </div>
+          
+      <div class="d-flex flex-column listaHot justify-content-between">
+        <div class="card" style="width: 18rem;"> 
+          <div class="card-body">
+            <span  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Con caminatas y cabalgatas incluidas">
+              <img class="card-img-top" alt="Hotel img" height="170px" width="200px" src="https://www.kayak.com.co/rimg/himg/43/14/2f/expediav2-4203341-3660686008-381084.jpg?width=968&height=968&crop=true"/>
+            </span>
+            <h6 class="card-title">La manigua lodge</h6>
+            <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Nulla convallis blandit felis, sit amet bibendum massa imperdiet quis. 
+                  In at auctor metus. Cras turpis ante, ultrices et quam ac, posuere.
+            </p>
+            <a id="btn-hotel-manigua" class="btn btn-danger"><i class="bi bi-sunglasses"></i> Visitar hotel</a>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column listaHot justify-content-between">
+        <div class="card" style="width: 18rem;"> 
+          <div class="card-body">
+            <span  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Con pesca devportiva">
+              <img class="card-img-top" alt="Hotel img" height="170px" width="200px" src="https://www.kayak.com.co/rimg/himg/5c/dc/b8/expediav2-3642429-1762176656-168883.jpg?width=968&height=607&crop=true"/>
+            </span>
+            <h6 class="card-title">Lodge paraiso verde manizales</h6>
+            <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Nulla convallis blandit felis, sit amet bibendum massa imperdiet quis. 
+                  In at auctor metus. Cras turpis ante, ultrices et quam ac, posuere.
+            </p> 
+            <a id="btn-hotel-mani" class="btn btn-danger"><i class="bi bi-sunglasses"></i> Visitar hotel</a>
+          </div>
+        </div> 
+      </div>
+      <div class="d-flex flex-column listaHot justify-content-between">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <span  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Evento de música en vivo">
+              <img class="card-img-top" alt="Hotel img" height="170px" width="200px" src="https://www.kayak.com.co/rimg/himg/af/42/4e/expediav2-407284-5d9012-047667.jpg?width=968&height=607&crop=true"/>
+            </span>
+            <h6 class="card-title">Ghl hotel Abadía plaza</h6>
+            <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Nulla convallis blandit felis, sit amet bibendum massa imperdiet quis. 
+                  In at auctor metus. Cras turpis ante, ultrices et quam ac, posuere.
+            </p>
+                
+                
+            <a  id="btn-hotel-abadia" class="btn btn-danger"><i class="bi bi-sunglasses"></i> Visitar hotel</a> <!-- danger por brown -->
+          </div>
+        </div>
+      </div> 
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="d-flex flex-column col-sm-12 centra">
+          <button type="button" id="subs-btn" class="btn color" data-bs-toggle="modal" data-bs-target="#static-news">
+            <i class="bi bi-newspaper"></i> Suscribirse para mas info
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="static-news" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="static-news-Label" aria-hidden="false">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title" id="static-news-Label">Tipos de eventos</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3 row d-flex justify-content-left">
+              <div class="col-sm-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="nombre" placeholder="Nombres">
+              </div>
+              <div class="col-sm-3">
+                <label for="apellidos" class="form-label">Apellidos</label>
+                  <input type="text" class="form-control" id="apellidos" placeholder="Apellidos">
+              </div>
+            </div>
+            <div class="mb-3 row d-flex justify-content-left">
+              <div class="col-sm-8">
+                <label for="email" class="form-label">Dirección de correo Electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+              </div>
+              <div class="col-sm-5">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="text" class="form-control" id="telefono" placeholder="Número de celular">
+              </div>
+            </div>
+          </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-danger">Suscribirse</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <footer>
+     
+        <div class="row">
+          <div class="col-sm-4 d-flex flex-column alinearDer">
+            <a href="https://www.facebook.com/"  class="links"><i class="bi bi-facebook"></i> Facebook</a>
+            <a href="https://www.tiktok.com/" class="links"><i class="bi bi-tiktok"></i> Tik tok</a>
+            <a href="https://www.Instagram.com/" class="links"><i class="bi bi-instagram"></i> Instagram</a>
+          </div>
+          <div class="col-sm-4 d-flex flex-column centrar" >
+            <address>
+              <h4>Oficina Principal</h4>
+              <p><i class="bi bi-building"></i> Calle 85 # 30-15, Bogota, Colombia</p>
+              <p><i class="bi bi-telephone"></i> 3070758</p>
+              <p><i class="bi bi-envelope-at"></i> destinosColombia@resorts.com</p>
+            </address>
+          </div>
+          <div class="col-sm-4 d-flex flex-column alinearIz">
+            <a href="https://www.facebook.com/" class="links" >Nosotros</a>
+            <a href="https://www.facebook.com/" class="links">Políticas</a>
+            <a href="./custServ.html" class="links">Quejas y reclamos</a>
+            <a href="https://www.facebook.com/" class="links">Trabaja con Nosotros</a>
+            <a href="./precios.html" class="links">Precios</a>
+          </div>
+        </div>
+   
+    </footer>
+   
+  </body>
+</html>

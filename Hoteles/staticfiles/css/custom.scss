@@ -1,0 +1,31 @@
+
+$accordion-bg:#FBDC6F;
+$accordion-color:#8E391E;
+$accordion-button-active-bg:brown;    
+$accordion-button-active-color:white;   
+$accordion-border-color:brown;
+$nav-tabs-link-active-bg: #FBDC6F;
+$nav-tabs-link-active-color: #8E391E;
+$link-color: #8E391E;
+$popover-header-color:white;
+$popover-border-color:#E74C3C;
+$popover-border-radius:3;
+$popover-header-bg:#E74C3C;
+$popover-body-color:black;
+$modal-content-color:#8E391E;   
+$modal-content-bg:#FBDC6F; 
+$modal-header-border-color:#8E391E;
+$modal-content-border-color:  #8E391E;
+$modal-footer-border-color: #8E391E;
+$modal-footer-bg:#FBE79F;
+$rojo: #D64817;
+$verde: #49A517;
+$azul: #12658C;
+$amarillo:#F7DB0D;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@mixin margin($top,$bottom){
+    margin-top: $top;
+    margin-bottom: $bottom;
+}

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/custom.css" >
+    <link rel="stylesheet" href="css/main.css" >
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js">
+
+    <title>Destinos Colombia</title>
+  </head>
+  <body>
+    <h1 class="fondo" >Destinos Colombia</h1>
+    
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><i class="bi bi-airplane-fill"></i> Destinos Colombia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="./index.html"> 
+              Inicio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./products.html">
+              Productos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./restaurants.html">
+              Restaurantes
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./events.html">
+              Eventos
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item" aria-current="page"><a href="./index.html">Inicio</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Quejas y reclamos</li>
+        </ol>
+      </nav>
+    </div>
+  
+    <div class="mb-3 row d-flex justify-content-center">
+      <div class="col-sm-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Nombres">
+      </div>
+      <div class="col-sm-3">
+        <label for="apellidos" class="form-label">Apellidos</label>
+        <input type="text" class="form-control" id="apellidos" placeholder="Apellidos">
+      </div>
+    </div>
+    <div class="mb-3 row d-flex justify-content-center">
+      <div class="col-sm-3">
+        <label for="email" class="form-label">Dirección de correo Electrónico</label>
+        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+      </div>
+      <div class="col-sm-3">
+        <label for="telefono" class="form-label">Teléfono</label>
+        <input type="text" class="form-control" id="telefono" placeholder="Número de celular">
+      </div>
+    </div>
+
+
+      <div class="form-floating">
+        <div class="mb-3 row d-flex justify-content-center">
+          <div class="col-sm-4">
+            <label for="floatingSelect">Seleccione operación</label>
+            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+              <option selected>Seleccione una opción</option>
+              <option value="1">Solicitud</option>
+              <option value="2">Queja y/o reclamo</option>
+              <option value="3">Sugerencia</option>
+            </select>
+            
+          </div>
+        </div>
+      </div>  
+
+      <div class="mb-3 row d-flex justify-content-center">
+        <div class="col-sm-4">
+          <label for="comentarios" class="form-label">Comentarios</label>
+          <textarea class="form-control" id="comentarios" rows="7"></textarea>
+        </div>
+      </div>
+
+
+      <script src="node_modules/jquery/dist/jquery.min.js"></script>
+      <script src="node_modules/popper.js/dist/popper.min.js" ></script>
+      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
+    <footer>
+     
+      <div class="row">
+        <div class="col-sm-4 d-flex flex-column alinearDer">
+          <a href="https://www.facebook.com/" padding-right class="links"><i class="bi bi-facebook"></i> Facebook</a>
+          <a href="https://www.tiktok.com/" class="links"><i class="bi bi-tiktok"></i> Tik tok</a>
+          <a href="https://www.Instagram.com/" class="links"><i class="bi bi-instagram"></i> Instagram</a>
+        </div>
+        <div class="col-sm-4 d-flex flex-column centrar">
+          <address>
+            <h4>Oficina Principal</h4>
+            <p><i class="bi bi-building"></i> Calle 85 # 30-15, Bogota, Colombia</p>
+            <p><i class="bi bi-telephone"></i> 3070758</p>
+            <p><i class="bi bi-envelope-at"></i> destinosColombia@resorts.com</p>
+          </address>
+        </div>
+        <div class="col-sm-4 d-flex flex-column alinearIz">
+          <a href="https://www.facebook.com/" class="links">Nosotros</a>
+          <a href="https://www.facebook.com/" class="links">Políticas</a>
+          <a href="./custServ.html" class="links">Quejas y reclamos</a>
+          <a href="https://www.facebook.com/" class="links">Trabaja con Nosotros</a>
+          <a href="./precios.html" class="links">Precios</a>
+        </div>
+      </div>
+ 
+  </footer>
+  </body>
+</html>
