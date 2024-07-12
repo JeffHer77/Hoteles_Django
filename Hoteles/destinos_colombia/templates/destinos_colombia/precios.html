@@ -1,17 +1,16 @@
 <!doctype html>
+
+{% load static %}
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="css/custom.css" >
-    <link rel="stylesheet" href="css/main.css" >
-    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js">
 
+    <link rel="stylesheet"  type="text/css" href="{% static 'css/main.css'%}" >
+    <link rel="stylesheet" href="{% static 'Bootstrap/bootstrap/dist/css/bootstrap.min.css'%}">
+    <script src="{%static 'Bootstrap/bootstrap/dist/js/bootstrap.bundle.min.js'%}"></script>
     
     <title>Destinos Colombia</title>
   </head>
@@ -26,22 +25,22 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="./index.html"> 
+            <a class="nav-link active" href="/">
               Inicio
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./products.html">
+            <a class="nav-link" href="/products">
               Productos
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./restaurants.html">
+            <a class="nav-link" href="/restaurants">
               Restaurantes
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./events.html">
+            <a class="nav-link" href="/events">
               Eventos
             </a>
           </li>
@@ -232,13 +231,6 @@
         </div>
       </div>
 
-
-
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js" ></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
-    
-
     <footer>
       <div class="container">
       <div class="row">
@@ -255,13 +247,13 @@
             <p><i class="bi bi-envelope-at"></i> destinosColombia@resorts.com</p>
           </address>
         </div>
-        <div class="col-sm-4 d-flex flex-column alinearIz">
-          <a href="https://www.facebook.com/" class="links">Nosotros</a>
-          <a href="https://www.facebook.com/" class="links">Políticas</a>
-          <a href="./custServ.html" class="links">Quejas y reclamos</a>
-          <a href="https://www.facebook.com/" class="links">Trabaja con Nosotros</a>
-          <a href="./precios.html" class="links">Precios</a>
-        </div>
+          <div class="col-sm-4 d-flex flex-column alinearIz">
+            <a href="#" class="links" >Nosotros</a>
+            <a href="#" class="links">Políticas</a>
+            <a href="/custServ" class="links">Quejas y reclamos</a>
+            <a href="#" class="links">Trabaja con Nosotros</a>
+            <a href="/precios" class="links">Precios</a>
+          </div>
       </div>
     </div>
   </footer>

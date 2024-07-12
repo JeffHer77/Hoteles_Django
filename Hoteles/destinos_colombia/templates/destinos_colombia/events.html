@@ -1,22 +1,21 @@
 <!doctype html>
+
+{% load static %}
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="css/custom.css" >
-    <link rel="stylesheet" href="css/main.css" >
-    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js">
 
+    <link rel="stylesheet"  type="text/css" href="{% static 'css/main.css'%}" >
+    <link rel="stylesheet" href="{% static 'Bootstrap/bootstrap/dist/css/bootstrap.min.css'%}">
+    <script src="{%static 'Bootstrap/bootstrap/dist/js/bootstrap.bundle.min.js'%}"></script>
     <title>Destinos Colombia</title>
   </head>
   <body>
     <h1 class="fondo" >Destinos Colombia</h1>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
       <a class="navbar-brand" href="./index.html"><i class="bi bi-airplane-fill"></i> Destinos Colombia</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,22 +24,22 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="./index.html"> 
+            <a class="nav-link active" href="/">
               Inicio
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./products.html">
+            <a class="nav-link" href="/products">
               Productos
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./restaurants.html">
+            <a class="nav-link" href="/restaurants">
               Restaurantes
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="./events.html">
+            <a class="nav-link" href="/events">
               Eventos
             </a>
           </li>
@@ -219,19 +218,7 @@
             </div>
           </div>
         </div>
- 
-      <!-- Optional JavaScript; choose one of the two! -->
 
-      <!-- Option 1: Bootstrap Bundle with Popper -->
-      <script src="node_modules/jquery/dist/jquery.min.js"></script>
-      <script src="node_modules/popper.js/dist/popper.min.js" ></script>
-      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
-      <!-- Option 2: Separate Popper and Bootstrap JS -->
-      <!--
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-      -->
-      
     </div>
     <footer>
      
@@ -249,13 +236,13 @@
             <p><i class="bi bi-envelope-at"></i> destinosColombia@resorts.com</p>
           </address>
         </div>
-        <div class="col-sm-4 d-flex flex-column alinearIz">
-          <a href="https://www.facebook.com/" class="links">Nosotros</a>
-          <a href="https://www.facebook.com/" class="links">Políticas</a>
-          <a href="./custServ.html" class="links">Quejas y reclamos</a>
-          <a href="https://www.facebook.com/" class="links">Trabaja con Nosotros</a>
-          <a href="./precios.html" class="links">Precios</a>
-        </div>
+          <div class="col-sm-4 d-flex flex-column alinearIz">
+            <a href="#" class="links" >Nosotros</a>
+            <a href="#" class="links">Políticas</a>
+            <a href="/custServ" class="links">Quejas y reclamos</a>
+            <a href="#" class="links">Trabaja con Nosotros</a>
+            <a href="/precios" class="links">Precios</a>
+          </div>
       </div>
  
   </footer>
