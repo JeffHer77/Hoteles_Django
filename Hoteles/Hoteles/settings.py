@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'Hoteles.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'destinos_col',
+        'USER': 'destinos_col_user',
+        'PASSWORD': 'fwxAdZ5GgfoY9TJCO5WFQSVRPSA5kqa9',
+        'HOST': 'dpg-cqtu5i3v2p9s73cj1c40-a',  # O la IP de tu servidor PostgreSQL
+        'PORT': '5432',  # Puerto por defecto para PostgreSQL
     }
 }
 

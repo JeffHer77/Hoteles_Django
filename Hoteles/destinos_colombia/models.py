@@ -54,12 +54,17 @@ class Cliente(models.Model):
 
 class Tarjeta(models.Model):
     numero_tarjeta = models.CharField(max_length=16)
-    fecha_vencimiento = models.DateField()
-    cliente = models.ForeignKey(Cliente, on_delete=models.CASCADE)
+    mes_venc = models.CharField(max_length=2, null= False)
+    anio_venc = models.CharField(max_length=2, null= False)
+    cliente_tar = models.ForeignKey(Cliente, on_delete=models.CASCADE)
 
 class HistorialCompra(models.Model):
-    cliente = models.ForeignKey(Cliente, on_delete=models.CASCADE)
-    empresa = models.ForeignKey(Empresa, on_delete=models.SET_NULL, null=True)
+    cliente_hist = models.ForeignKey(Cliente, on_delete=models.CASCADE)
     servicio = models.ForeignKey(Servicio, on_delete=models.SET_NULL, null=True)
     tarjeta = models.ForeignKey(Tarjeta, on_delete=models.SET_NULL, null=True)
     fecha_compra = models.DateTimeField()
+
+class Compras_Productos(models.Model):
+    compra = models.ForeignKey(HistorialCompra, on_delete=models.CASCADE)
+    cantidad = models.CharField(max_length= 10, null=False)
+    medio_pago = models.CharField(max_length=20, null= False)
