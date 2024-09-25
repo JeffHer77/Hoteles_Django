@@ -1,0 +1,98 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet"  type="text/css" href="{% static 'css/main.css' %}" >
+    <link rel="stylesheet" href="{% static 'Bootstrap/bootstrap/dist/css/bootstrap.min.css' %}">
+    <script src="{% static 'Bootstrap/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+    <title> Destinos Colombia </title>
+  </head>
+  <body>
+
+    <h1 class="header" >Destinos Colombia </h1>
+    <div class="body">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><i class="bi bi-airplane-fill"></i> Destinos Colombia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="/">
+              Inicio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/products">
+              Productos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/restaurants">
+              Restaurantes
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/events">
+              Eventos
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+    <div class="container">
+      <nav aria-label="breadcrumb" class="centrar">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+        </ol>
+      </nav>
+    </div>
+
+
+{% block content %}
+
+{% endblock %}
+
+
+
+
+</div>
+    <footer>
+
+
+          <div class="row">
+            <div class="col-sm-4 d-flex flex-column alinearDer">
+              <a href="https://www.facebook.com/"  class="links"><i class="bi bi-facebook"></i> Facebook</a>
+              <a href="https://www.tiktok.com/" class="links"><i class="bi bi-tiktok"></i> Tik tok</a>
+              <a href="https://www.Instagram.com/" class="links"><i class="bi bi-instagram"></i> Instagram</a>
+            </div>
+            <div class="col-sm-4 d-flex flex-column centrar" >
+              <address>
+                <div class="dib1">Oficina Principal</div>
+                <p><i class="bi bi-building"></i> Calle 85 # 30-15, Bogota, Colombia</p>
+                <p><i class="bi bi-telephone"></i> 3070758</p>
+                <p><i class="bi bi-envelope-at"></i> destinosColombia@resorts.com</p>
+              </address>
+            </div>
+            <div class="col-sm-4 d-flex flex-column alinearIz">
+              <a href="#" class="links" >Nosotros</a>
+              <a href="#" class="links">Políticas</a>
+              <a href="/custServ" class="links">Quejas y reclamos</a>
+              <a href="#" class="links">Trabaja con Nosotros</a>
+              <a href="/precios" class="links">Precios</a>
+            </div>
+          </div>
+
+    </footer>
+
+  </body>
+</html>
+

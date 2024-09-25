@@ -39,7 +39,7 @@ class Servicio(models.Model):
 class Cliente(models.Model):
     nombres = models.CharField(max_length=255)
     apellidos = models.CharField(max_length=255)
-    celular = telefono = models.CharField(
+    celular = models.CharField(
         max_length=20,  # Ajusta la longitud según tus necesidades
         validators=[
             RegexValidator(
@@ -50,7 +50,6 @@ class Cliente(models.Model):
         blank=True,  # Si el campo es opcional
     )
     email = models.EmailField(unique=True)
-    # Otros campos
 
 class Tarjeta(models.Model):
     numero_tarjeta = models.CharField(max_length=16)

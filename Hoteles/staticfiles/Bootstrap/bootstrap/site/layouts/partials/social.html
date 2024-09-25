@@ -1,11 +1,11 @@
 {{- $pageTitle := .Title | markdownify -}}
 {{- $pageDescription := .Page.Params.description | default .Site.Params.description | markdownify -}}
-{{- $socialImagePath := urls.JoinPath "/docs" .Site.Params.docs_version "assets" -}}
+{{- $socialImagePath := printf "/docs/%s/assets" .Site.Params.docs_version -}}
 
 {{- if .Page.Params.thumbnail -}}
-  {{- $socialImagePath = urls.JoinPath $socialImagePath "img" .Page.Params.thumbnail -}}
+  {{- $socialImagePath = path.Join $socialImagePath "img/" .Page.Params.thumbnail -}}
 {{- else -}}
-  {{- $socialImagePath = urls.JoinPath $socialImagePath "brand/bootstrap-social.png" -}}
+  {{- $socialImagePath = path.Join $socialImagePath "brand/bootstrap-social.png" -}}
 {{- end -}}
 
 <meta name="twitter:card" content="summary_large_image">

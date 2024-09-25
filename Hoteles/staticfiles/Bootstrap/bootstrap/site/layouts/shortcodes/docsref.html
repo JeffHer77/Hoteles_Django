@@ -1,2 +1,1 @@
-{{- $pageToReference := path.Join "docs" $.Site.Params.docs_version (.Get 0) -}}
-{{- relref . $pageToReference | relURL -}}
+{{- relref . ((path.Join "docs" $.Site.Params.docs_version (.Get 0)) | relURL) -}}

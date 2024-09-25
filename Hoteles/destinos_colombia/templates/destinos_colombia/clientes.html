@@ -1,0 +1,24 @@
+
+
+{% extends 'destinos_colombia/base.html' %}
+{% block content %}
+    <form action="/clientes" method="post">
+
+      {% csrf_token %}
+      {{ form }}
+    <input type="submit" value="Submit">
+
+    </form>
+
+    <form action="/eliminarClientes" method='post'>
+
+      {% csrf_token %}
+      {{ form }}
+
+      <button type="submit">Submit</button>
+
+
+    </form>
+    <a class="btn btn-danger" data-bs-title="Ver Datos" data-bs-custom-class="custom-popover" data-bs-toggle="popover" data-bs-content="Ver datos tabla cliente" href="/datos"><i class="bi bi-info-circle"></i> Ver datos</a>
+
+{% endblock %}

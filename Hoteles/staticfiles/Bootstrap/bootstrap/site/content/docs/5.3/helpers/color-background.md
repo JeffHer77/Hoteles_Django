@@ -4,8 +4,7 @@ title: Color and background
 description: Set a background color with contrasting foreground color.
 group: helpers
 toc: true
-added:
-  version: "5.2"
+added: "5.2"
 ---
 
 ## Overview

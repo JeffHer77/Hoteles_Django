@@ -4,8 +4,7 @@ title: Color modes
 description: Bootstrap now supports color modes, or themes, as of v5.3.0. Explore our default light color mode and the new dark mode, or create your own using our styles as your template.
 group: customize
 toc: true
-added:
-  version: "5.3"
+added: "5.3"
 ---
 
 {{< callout >}}

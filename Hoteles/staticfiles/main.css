@@ -1,6 +1,6 @@
-.fondo{
-  background-color: coral;
-  color:black;
+.header{
+  background-color: #3f10A3;
+  color: white;
   text-align: center;
   padding-top: 70px;
   margin-bottom: 0px;
@@ -10,18 +10,23 @@
   padding: 2px 7px 2px 7px;
 }
 footer{
-  padding: 10px 1px 0px 10px;
-  background-color: coral;
+  padding: 20px 10px 0px 10px;
+  background-color: #4D046A;
   margin-bottom: 0px;
-  margin-top: 10px;
+  margin-top: 0;
   text-align: center;
-  color:brown;
+  color: #CCB5D0;
   align-items:flex-start;
   
 }
 
+.body {
+background: linear-gradient(to bottom, #320D81, #52085D);
+color: #CCB5D0;
+}
+
 .links{
-  color:brown;
+    color: #CCB5D0;
 }
 .alinearDer{
   align-items: flex-end;
@@ -30,12 +35,11 @@ footer{
   align-items: flex-start;
 }
 .centrar{
-  align-items: flex-start;
+  align-items: center;
   padding-left: 100px;
   margin-bottom: 2px;
 }
 p{
-  margin-bottom: 2px;
   justify-content: left;
   text-align: left;
 }
@@ -45,7 +49,7 @@ p{
 
 .color{
   color:white;
-  background-color:#1467b1;
+  background-color:#1467Bx1;
 
 }
 .centra{
@@ -68,4 +72,9 @@ p{
 .dib1{
   width: 70%;
   margin-left: 15%;
+  font-size: 18px;
+  justify-content: center;
 }
+
+
+

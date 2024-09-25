@@ -4,8 +4,7 @@ title: Placeholders
 description: Use loading placeholders for your components or pages to indicate something may still be loading.
 group: components
 toc: true
-added:
-  version: "5.1"
+added: "5.1"
 ---
 
 ## About

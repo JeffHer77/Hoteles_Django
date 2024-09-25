@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 import os.path
 from pathlib import Path
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -37,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'destinos_colombia',
 
 ]
 
@@ -74,16 +76,9 @@ WSGI_APPLICATION = 'Hoteles.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'destinos_col',
-        'USER': 'destinos_col_user',
-        'PASSWORD': 'fwxAdZ5GgfoY9TJCO5WFQSVRPSA5kqa9',
-        'HOST': 'dpg-cqtu5i3v2p9s73cj1c40-a',  # O la IP de tu servidor PostgreSQL
-        'PORT': '5432',  # Puerto por defecto para PostgreSQL
-    }
-}
+DATABASES = {  'default':  dj_database_url.parse(
+    'postgresql://hoteles_bt28_user:mNmdZBLdQQpjyW0opZvXsyP6fDccBKbg@dpg-crkeci3v2p9s73b66a10-a.oregon-postgres.render.com/hoteles_bt28'
+) }
 
 
 # Password validation
