@@ -1,10 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'destinos_colombia/base.html' %}
+{% block content %}
 
-</body>
-</html>
+<form action="/registroCliente" method="post">
+
+      {% csrf_token %}
+      {{ form}}
+    <input type="submit" value="Registrar">
+
+    </form>
+
+{% endblock %}

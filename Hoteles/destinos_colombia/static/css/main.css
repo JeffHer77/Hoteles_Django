@@ -1,5 +1,5 @@
 .header{
-  background-color: #3f10A3;
+  background: linear-gradient( to bottom, #137015, #3f10A3);      /* #3f10A3 */
   color: white;
   text-align: center;
   padding-top: 70px;
@@ -21,7 +21,7 @@ footer{
 }
 
 .body {
-background: linear-gradient(to bottom, #320D81, #52085D);
+background: linear-gradient(to bottom, #320D81, #52085D); /* #52085D */
 color: #CCB5D0;
 }
 

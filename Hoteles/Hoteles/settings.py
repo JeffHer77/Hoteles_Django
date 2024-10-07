@@ -16,7 +16,11 @@ import dj_database_url
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
+#AUTH_USER_MODEL = 'destinos_colombia.CustomUser'
+#AUTHENTICATION_BACKENDS = (
+#    'destinos_colombia.backends.EmailBackend',  # Replace 'yourapp' with the name of your app
+#    'django.contrib.auth.backends.ModelBackend',  # Keep the default backend for other auth methods
+#)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
@@ -76,10 +80,10 @@ WSGI_APPLICATION = 'Hoteles.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {  'default':  dj_database_url.parse(
-    'postgresql://hoteles_bt28_user:mNmdZBLdQQpjyW0opZvXsyP6fDccBKbg@dpg-crkeci3v2p9s73b66a10-a.oregon-postgres.render.com/hoteles_bt28'
-) }
+DATABASES = {
+}
 
+AUTH_USER_MODEL = 'destinos_colombia.CustomUser'
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
@@ -125,3 +129,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+LOGIN_REDIRECT_URL = "/ingreso"
+LOGOUT_REDIRECT_URL = 'logout.html'
