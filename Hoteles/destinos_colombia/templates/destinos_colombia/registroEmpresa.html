@@ -1,0 +1,12 @@
+{% extends 'destinos_colombia/base.html' %}
+{% block content %}
+
+<form action="/registroEmpresa" method="post">
+
+      {% csrf_token %}
+      {{ form}}
+    <input type="submit" value="Registrar">
+
+    </form>
+
+{% endblock %}

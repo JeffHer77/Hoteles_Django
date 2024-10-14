@@ -76,5 +76,7 @@ p{
   justify-content: center;
 }
 
-
+.login{
+    flex-direction: row-reverse;
+}
 

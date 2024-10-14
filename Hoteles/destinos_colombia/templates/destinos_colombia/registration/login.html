@@ -1,14 +1,7 @@
 {% extends 'destinos_colombia/base.html' %}
 {% block content %}
-    <form action="/clientes" method="post">
 
-      {% csrf_token %}
-      {{ form }}
-    <input type="submit" value="Submit">
-
-    </form>
-
-    <form action="/ingreso" method='post'>
+    <form action="/login" method='post'>
 
       {% csrf_token %}
       {{ form }}
